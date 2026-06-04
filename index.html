@@ -113,7 +113,7 @@
 <main class="sheet">
   <p class="eyebrow">ARES-NEXUS · Matchmaking Session · Layer 1 navigation engine</p>
   <h1>ORB-SLAM3 vs. LingBot-Map under operating stress</h1>
-  <p class="lede">Drag the operating conditions to see how each Layer 1 approach behaves. The honest story isn't "new beats old everywhere" &mdash; it's a <b>trade-off</b>: the AI foundation model leads on resilience and dense map quality, while ORB-SLAM3 keeps a decisive edge on metric accuracy and CPU efficiency. Our architecture uses LingBot-Map as the primary loop and ORB-SLAM3 as the verified fallback. Use the presets to walk an engineer through specific flight regimes.</p>
+  <p class="lede">Drag the operating conditions to see how each Layer 1 approach behaves. The honest story isn't "new beats old everywhere" , it's a <b>trade-off</b>: the AI foundation model leads on resilience and dense map quality, while ORB-SLAM3 keeps a decisive edge on metric accuracy and CPU efficiency. Our architecture uses LingBot-Map as the primary loop and ORB-SLAM3 as the verified fallback. Use the presets to walk an engineer through specific flight regimes.</p>
 
   <section class="controls">
     <div class="ctl">
@@ -145,8 +145,8 @@
       <canvas id="radar" role="img" aria-label="Radar chart comparing ORB-SLAM3 and LingBot-Map across six axes. Scores update with the operating-condition sliders.">Radar comparison across six axes.</canvas>
     </div>
     <div class="readout">
-      <div class="who"><span class="dot" style="background:var(--slam)"></span>ORB-SLAM3 &mdash; feature-based VI-SLAM</div>
-      <div class="who"><span class="dot" style="background:var(--ling)"></span>LingBot-Map &mdash; GCT foundation model</div>
+      <div class="who"><span class="dot" style="background:var(--slam)"></span>ORB-SLAM3 , feature-based VI-SLAM</div>
+      <div class="who"><span class="dot" style="background:var(--ling)"></span>LingBot-Map , GCT foundation model</div>
       <div class="verdict">
         <div class="k">Read under current conditions</div>
         <p id="verdict"></p>
@@ -190,17 +190,17 @@
     </div>
   </div>
 
-  <p class="note"><b>Methodology &amp; honesty note.</b> The radar shows <b>illustrative relative positioning</b> under the conditions you select &mdash; a decision aid, not a head-to-head benchmark run, since the two systems are not benchmarked against each other on a common UAV dataset. All figures in the "Verified specifications" and stat cards above are sourced (see references). The two accuracy numbers are <b>not directly comparable</b>: ORB-SLAM3's 3.6 cm is on the indoor/short EuRoC drone benchmark; LingBot-Map's 6.42 m is on the large-scale outdoor Oxford Spires sequence &mdash; different scales and conditions. LingBot-Map is weeks old and <b>not yet flight-validated on UAVs</b> (its benchmarks are largely ground/handheld), which is exactly why our plan includes running the open-source model over real GPS-denied drone footage as live proof.</p>
+  <p class="note"><b>Methodology &amp; honesty note.</b> The radar shows <b>illustrative relative positioning</b> under the conditions you select, a decision aid, not a head-to-head benchmark run, since the two systems are not benchmarked against each other on a common UAV dataset. All figures in the "Verified specifications" and stat cards above are sourced (see references). The two accuracy numbers are <b>not directly comparable</b>: ORB-SLAM3's 3.6 cm is on the indoor/short EuRoC drone benchmark; LingBot-Map's 6.42 m is on the large-scale outdoor Oxford Spires sequence , different scales and conditions. LingBot-Map is weeks old and <b>not yet flight-validated on UAVs</b> (its benchmarks are largely ground/handheld), which is exactly why our plan includes running the open-source model over real GPS-denied drone footage as live proof.</p>
 
   <div class="refs">
     <h5>References</h5>
     <ol>
-      <li>Chen et al., "Geometric Context Transformer for Streaming 3D Reconstruction" (LingBot-Map), arXiv:2604.14141, 2026 &mdash; <a href="https://arxiv.org/abs/2604.14141">arxiv.org/abs/2604.14141</a></li>
-      <li>LingBot-Map code &amp; model (Apache 2.0; CUDA/GPU; 4.63 GB checkpoint) &mdash; <a href="https://github.com/Robbyant/lingbot-map">github.com/Robbyant/lingbot-map</a> &middot; <a href="https://huggingface.co/robbyant/lingbot-map">huggingface.co/robbyant/lingbot-map</a></li>
+      <li>Chen et al., "Geometric Context Transformer for Streaming 3D Reconstruction" (LingBot-Map), arXiv:2604.14141, 2026, <a href="https://arxiv.org/abs/2604.14141">arxiv.org/abs/2604.14141</a></li>
+      <li>LingBot-Map code &amp; model (Apache 2.0; CUDA/GPU; 4.63 GB checkpoint) , <a href="https://github.com/Robbyant/lingbot-map">github.com/Robbyant/lingbot-map</a> &middot; <a href="https://huggingface.co/robbyant/lingbot-map">huggingface.co/robbyant/lingbot-map</a></li>
       <li>Robbyant (Ant Group) press release, "Unveils LingBot-Map," Business Wire, 16 Apr 2026 (ETH3D F1 98.98; single RGB camera; release date)</li>
-      <li>Campos et al., "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM," IEEE T-RO 2021 / arXiv:2007.11898 (3.6 cm EuRoC; 30-40 FPS CPU; 2-10x accuracy) &mdash; <a href="https://arxiv.org/abs/2007.11898">arxiv.org/abs/2007.11898</a></li>
-      <li>Oxford Spires ATE 6.42 m, ~2.8x over prior streaming method &mdash; RoboHorizon technical writeup of LingBot-Map, Apr 2026</li>
-      <li>ORB-SLAM3 repository license (GPLv3) &mdash; <a href="https://github.com/UZ-SLAMLab/ORB_SLAM3">github.com/UZ-SLAMLab/ORB_SLAM3</a></li>
+      <li>Campos et al., "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM," IEEE T-RO 2021 / arXiv:2007.11898 (3.6 cm EuRoC; 30-40 FPS CPU; 2-10x accuracy) , <a href="https://arxiv.org/abs/2007.11898">arxiv.org/abs/2007.11898</a></li>
+      <li>Oxford Spires ATE 6.42 m, ~2.8x over prior streaming method , RoboHorizon technical writeup of LingBot-Map, Apr 2026</li>
+      <li>ORB-SLAM3 repository license (GPLv3) , <a href="https://github.com/UZ-SLAMLab/ORB_SLAM3">github.com/UZ-SLAMLab/ORB_SLAM3</a></li>
     </ol>
   </div>
 
@@ -266,12 +266,12 @@
     const resGap=((ling[0]+ling[1]+ling[2]+ling[3])-(orb[0]+orb[1]+orb[2]+orb[3]))/4;
     const rt=ling[4];
     if(rt<50)
-      return `At this compute budget, <b>LingBot-Map can't hold real-time</b> (${rt}/100) &mdash; ORB-SLAM3 stays viable on CPU-only hardware. Either spec a stronger Jetson, or this regime favours the lean classical fallback.`;
+      return `At this compute budget, <b>LingBot-Map can't hold real-time</b> (${rt}/100) , ORB-SLAM3 stays viable on CPU-only hardware. Either spec a stronger Jetson, or this regime favours the lean classical fallback.`;
     if(v>=60||d>=60)
-      return `Under this stress, ORB-SLAM3's feature tracking degrades while the transformer holds &mdash; a <b>+${r(resGap)}-point resilience edge</b> for LingBot-Map. This is the GNSS-denied case we pitch on.`;
+      return `Under this stress, ORB-SLAM3's feature tracking degrades while the transformer holds , a <b>+${r(resGap)}-point resilience edge</b> for LingBot-Map. This is the GNSS-denied case we pitch on.`;
     if(resGap>18)
-      return `Even in calm conditions LingBot-Map leads on resilience and dense map detail (<b>+${r(resGap)} pts</b>), but ORB-SLAM3 still wins on metric accuracy and CPU efficiency &mdash; the reason we keep it as the fallback.`;
-    return `Conditions are gentle: both perform well. The split is <b>dense maps &amp; resilience (LingBot-Map)</b> vs <b>metric accuracy &amp; CPU efficiency (ORB-SLAM3)</b> &mdash; which is why we run both.`;
+      return `Even in calm conditions LingBot-Map leads on resilience and dense map detail (<b>+${r(resGap)} pts</b>), but ORB-SLAM3 still wins on metric accuracy and CPU efficiency , the reason we keep it as the fallback.`;
+    return `Conditions are gentle: both perform well. The split is <b>dense maps &amp; resilience (LingBot-Map)</b> vs <b>metric accuracy &amp; CPU efficiency (ORB-SLAM3)</b> , which is why we run both.`;
   }
   function render(){
     const v=+vEl.value,d=+dEl.value,c=+cEl.value;
